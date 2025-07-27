@@ -1,67 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RR Associe - Tatkal Money Transfer</title>
-  <link rel="stylesheet" href="assets/css/styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <h2>Welcome to RR Associe!</h2>
+      <p>We offer Money Transfer, AEPS, Micro ATM, Mobile Recharge, Insurance, and Travel Ticket Booking services.</p>
+    </div>
+  </div>
+
   <header>
     <div class="container">
       <h1>RR Associe</h1>
-      <p>Tatkal Money Transfer & Multi Services</p>
+      <p class="tagline">Tatkal Money Transfer</p>
     </div>
   </header>
-  <section class="services">
+
+  <section class="intro">
     <div class="container">
       <h2>Our Services</h2>
-      <div class="services-grid">
-        <div class="service-box">
-          <i class="fas fa-money-check-alt"></i>
-          <h3>Money Transfer</h3>
-          <p>Instant domestic money transfer to any bank across India.</p>
-          <a href="#">Learn more</a>
-        </div>
-        <div class="service-box">
-          <i class="fas fa-fingerprint"></i>
-          <h3>AEPS Withdrawal</h3>
-          <p>Withdraw money using Aadhaar authentication.</p>
-          <a href="#">Learn more</a>
-        </div>
-        <div class="service-box">
-          <i class="fas fa-desktop"></i>
-          <h3>Micro ATM</h3>
-          <p>Card-based withdrawal at our center using Micro ATM.</p>
-          <a href="#">Learn more</a>
-        </div>
-        <div class="service-box">
-          <i class="fas fa-bus"></i>
-          <h3>Bus / Train / Flight Booking</h3>
-          <p>Book travel tickets quickly and easily with us.</p>
-          <a href="#">Learn more</a>
-        </div>
-        <div class="service-box">
-          <i class="fas fa-file-alt"></i>
-          <h3>Bill Payments</h3>
-          <p>Pay electricity, water, DTH, and mobile bills.</p>
-          <a href="#">Learn more</a>
-        </div>
-        <div class="service-box">
-          <i class="fas fa-shield-alt"></i>
-          <h3>Insurance</h3>
-          <p>Health and Wealth Insurance Services Available.</p>
-          <a href="#">Learn more</a>
-        </div>
-      </div>
+      <ul>
+        <li>Domestic Money Transfer</li>
+        <li>AEPS (Aadhaar Enabled Payment System)</li>
+        <li>Micro ATM Withdrawal</li>
+        <li>Mobile Recharge</li>
+        <li>Insurance – Health & Wealth</li>
+        <li>Bus, Train & Flight Ticket Booking</li>
+      </ul>
     </div>
   </section>
+
+  <section class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p><strong>Location:</strong> No.15, Patanjali Plaza, Old Trunk Road, Pallavaram, Chennai - 600 043</p>
+      <p><strong>Phone:</strong> 98843 48843 / 99411 86135</p>
+    </div>
+  </section>
+
   <footer>
     <div class="container">
-      <p>Contact: rrassocie2020@gmail.com | 98843 48843, 99411 86135</p>
-      <p>Address: No.15, Patanjali Plaza, Old Trunk Road, Pallavaram, Chennai - 600 043.</p>
+      <p>&copy; 2025 RR Associe. All rights reserved.</p>
     </div>
   </footer>
+
+  <script>
+    window.onload = function () {
+      document.getElementById("popup").style.display = "block";
+    };
+    function closePopup() {
+      document.getElementById("popup").style.display = "none";
+    }
+  </script>
 </body>
+
 </html>
